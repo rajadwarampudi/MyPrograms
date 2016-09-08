@@ -9,8 +9,8 @@ public class Solution {
 		HashMap<Integer, Integer> remainMap = new HashMap<Integer, Integer>();
 		
 		for(int i = 0; i < nums.length ; i++) {
-			if(remainMap.get(target-nums[i]) != null) {
-				result[0] = remainMap.get(target-nums[i]);
+			if(remainMap.get(target-nums[i]) != null) {    //searching if the remaining number of target 
+				result[0] = remainMap.get(target-nums[i]); //after subtracting the current number. 
 				result[1] = i;
 				return result;
 			}
